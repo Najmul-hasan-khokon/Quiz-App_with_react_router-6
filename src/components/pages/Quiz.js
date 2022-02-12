@@ -1,8 +1,7 @@
 import { getDatabase, ref, set } from "firebase/database";
 import _ from "lodash";
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 import { useAuth } from "../../contexts/AuthContext";
 import useQuestion from "../../hooks/useQuestion";
 import Answers from "../Answers";
